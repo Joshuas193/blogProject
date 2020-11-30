@@ -1,0 +1,38 @@
+/* Importing the secondary style sheets into the main stylesheet */
+@import "frontPage.css";
+@import "blogPage.css";
+@import "header.css";
+@import "footer.css";
+
+/* Global styles */
+html {
+  background: white;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h2, h4, h5, h6 {
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+p, li, article {
+  font-family: 'Merriweather', serif;
+}
+
+.footer {
+  font-size: 10px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  color: black;
+} 
