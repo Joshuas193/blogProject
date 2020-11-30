@@ -111,5 +111,18 @@
   #footer-logo {
     font-size: 18px;
   }
+
+  .copyright {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    margin-left: 2em;
+  }
+
+  .footer-info {
+    display: flex;
+    justify-content: right;
+    width: 20%;
+  }
 }
 
