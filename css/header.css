@@ -12,22 +12,64 @@
   transition: 0.8s;
 } 
 
-/* Styling for small devices 425px and smaller */
-@media screen and (max-width: 425px) {
+/* Styling for small devices 480px and smaller */
+@media screen and (max-width: 480px) {
+
+  /* Header styling and flex container */
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+  }
+
+  .logo header h1 {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;    
+  }
+
+  /* Nav-link container layuot */
+  .nav-links {
+    display: flex;
+    height: 50%;
+  }
+
+  .nav-links nav {
+    width: 100%;
+    display: flex;
+  }
+
+  .nav-links ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .nav-links ul li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Styling for medium screens from 481px to 799px wide */
+@media screen and (min-width: 481px) {
 
   
 }
 
-/* Styling for medium screens from 426px to 800px wide */
-@media screen and (min-width: 426px) {
-
-  
-}
-
-/* Styling for large screens */
-@media screen and (min-width: 850px) {
-
-  
+/* Styling for large screens 800px and larger */
+@media screen and (min-width: 800px) {  
 
   /* navigation transition styles for hovered links */ 
   .nav-links ul a:hover, .nav-links ul a:active {

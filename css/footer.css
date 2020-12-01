@@ -12,16 +12,66 @@
 }
 
 /* styles for small screens */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 480px) {
 
   /* removing the larger sized div from being displayed in mobile */
   .footer {
     display: none;
   }
+
+  /* Setting all the containers to flex */
+  .footer-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-mobile footer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .contact-mobile {
+    display: flex;
+    height: 65%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-mobile address {
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact-mobile address ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-mobile ul li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .copyright-mobile {
+    display: flex;
+    height: 35%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .copyright-mobile p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
 }
 
-/* styles for medium screens from 401px to 800px */
-@media screen and (min-width: 426px) {
+/* styles for medium screens from 481px to 799px */
+@media screen and (min-width: 481px) {
 
   /* removing the mobile style div from larger displays */
    .footer-mobile {
@@ -29,8 +79,8 @@
   }
 }
 
-/* styles for large screens 801px anf higher */
-@media screen and (min-width: 850px) {
+/* styles for large screens 800px and higher */
+@media screen and (min-width: 800px) {
 
 
 }
