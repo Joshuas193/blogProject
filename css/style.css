@@ -1,6 +1,6 @@
 /* Importing the secondary style sheets into the main stylesheet */
-@import "frontPage.css";
-@import "blogPage.css";
+@import "main-page.css";
+@import "blog-page.css"; 
 @import "header.css";
 @import "footer.css";
 
@@ -13,6 +13,7 @@ body {
   margin: 0;
 }
 
+/* global font styles */
 h1, h2, h2, h4, h5, h6 {
   font-family: 'Noto Sans SC', sans-serif;
 }
@@ -21,8 +22,13 @@ p, li, article {
   font-family: 'Merriweather', serif;
 }
 
-.footer {
+footer {
   font-size: 10px;
+}
+
+/* global list styles */
+ul {
+  padding: 0;
 }
 
 li {
@@ -35,4 +41,8 @@ a {
 
 a:link, a:visited {
   color: black;
-} 
+}
+
+div {
+  border: 1px solid black;
+}

@@ -1,0 +1,28 @@
+/* Setting the grid layout for mobile screens */
+@media screen and (max-width: 425px) {
+
+  .page-content {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: 98vw;
+    grid-template-rows: 21vh 67vh 20vh;
+    grid-gap: 15px;
+    grid-template-areas: 
+    "hd"
+    "content"
+    "ft";
+  }
+
+  .header {
+    grid-area: hd;
+  }
+
+  .main-content {
+    grid-area: content;
+  }
+
+  .footer-mobile {
+    grid-area: ft;
+  }
+}

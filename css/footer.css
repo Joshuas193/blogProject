@@ -1,128 +1,37 @@
 /* styles for all screen sizes */
-.footer {
+.footer, .footer-mobile {
   background-image: linear-gradient(to top right, rgba(0,0,0,1), rgba(0,0,0,0.6));
   color: rgba(255, 255, 255, 0.8);
   text-shadow: 1px 1px 2px red, -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
   box-shadow: 0 -6px 8px gray;
 }
 
-.footer ul a {
+.footer ul a, .footer-mobile ul a {
   color: white;
   text-decoration: underline;
 }
 
-#footer-logo {
-  font-size: 14px;
-}
-
-.copyright p, .copyright-mobile p {
-  font-size: 8px;
-  line-height: 2em;
-}
-
 /* styles for small screens */
-@media screen and (max-width: 400px) {
-
-  /* footer layout styles */
-  .footer {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .footer p {
-    padding-top: 1em;
-    margin: auto 0 auto 0;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-  }
-
-  #footer-logo {
-    font-size: 12px;
-  }
-
-  /* layout style for the list items */
-  .footer-info-mobile ul {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .footer-info-mobile ul li {
-    display: flex;
-    justify-content: center;
-  }
+@media screen and (max-width: 425px) {
 
   /* removing the larger sized div from being displayed in mobile */
-  .copyright {
-    display: none;
-  }
-
-  .footer-info {
+  .footer {
     display: none;
   }
 }
 
 /* styles for medium screens from 401px to 800px */
-@media screen and (min-width: 401px) {
+@media screen and (min-width: 426px) {
 
-  /* removing the mobile style divs from larger displays */
-  .copyright-mobile {
+  /* removing the mobile style div from larger displays */
+   .footer-mobile {
     display: none;
-  }
-
-  .footer-info-mobile {
-    display: none;
-  }
-
-  /* setting the layout of divs within the footer */
-  .footer {
-    display: flex;
-    flex-direction: row;
-    align-items: right;
-  }
-
-  .copyright {
-    display: flex;
-    width: 60%;
-    align-items: center;
-    margin-left: 2em;
-  }
-
-  .footer-info {
-    display: flex;
-    justify-content: right;
-    width: 40%;
-  }
-
-  address {
-    margin: auto auto;
   }
 }
 
 /* styles for large screens 801px anf higher */
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 850px) {
 
-  /* design enhancements for large screen sizes */
-  .copyright {
-    margin-left: 3em;
-  }
 
-  #footer-logo {
-    font-size: 18px;
-  }
-
-  .copyright {
-    display: flex;
-    width: 80%;
-    align-items: center;
-    margin-left: 2em;
-  }
-
-  .footer-info {
-    display: flex;
-    justify-content: right;
-    width: 20%;
-  }
 }
 
