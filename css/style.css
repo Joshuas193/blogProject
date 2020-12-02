@@ -22,10 +22,6 @@ p, li, article {
   font-family: 'Merriweather', serif;
 }
 
-footer {
-  font-size: 10px;
-}
-
 /* global list styles */
 ul {
   padding: 0;
@@ -41,8 +37,4 @@ a {
 
 a:link, a:visited {
   color: black;
-}
-
-div {
-  border: 1px solid black;
 }

@@ -3,7 +3,7 @@
   background-image: linear-gradient(to bottom right, rgba(0,0,0,1), rgba(0,0,0,0.7));
   text-shadow: 3px 1px 12px red, -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   color: black;
-  box-shadow: 0 6px 8px gray;
+  box-shadow: 0 6px 8px rgba(0,0,0,0.7);
 }
 
 .nav-links ul a {
@@ -33,7 +33,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2em;    
+    font-size: 1.4em;    
   }
 
   /* Nav-link container layuot */
