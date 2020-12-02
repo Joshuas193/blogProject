@@ -11,7 +11,7 @@
   text-decoration: underline;
 }
 
-/* styles for small screens */
+/* styles for small screens *480px and smaller */
 @media screen and (max-width: 480px) {
 
   /* removing the larger sized div from being displayed in mobile */
@@ -68,6 +68,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    margin: 0 0 10px 0;
   }
 }
 

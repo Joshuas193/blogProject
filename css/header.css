@@ -10,7 +10,7 @@
   font-weight: 500;
   text-shadow: 3px 1px 8px red, -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
   transition: 0.8s;
-} 
+}
 
 /* Styling for small devices 480px and smaller */
 @media screen and (max-width: 480px) {
@@ -33,7 +33,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.4em;    
+    font-size: 1.8em;    
   }
 
   /* Nav-link container layuot */
