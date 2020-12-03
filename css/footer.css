@@ -51,12 +51,7 @@
     flex-direction: column;
   }
 
-  .contact-mobile ul li {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .copyright-mobile {
+   .copyright-mobile {
     display: flex;
     height: 35%;
     justify-content: center;
