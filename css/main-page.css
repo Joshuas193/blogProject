@@ -7,13 +7,13 @@
 }
 
 /* Setting styles for mobile screens */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) { 
 
   /* Setting the grid layout */
   .page-content {
     display: grid;
     width: 100%;
-    margin: auto;
+    margin: auto auto;
     justify-content: center;
     grid-template-columns: 1fr;
     grid-auto-rows: minmax(0.8fr, auto);
@@ -31,6 +31,7 @@
   .main-content {
     grid-area: con;
     display: flex;
+    height: 100%;
     justify-content: center;
     align-items: center;
   }
@@ -39,14 +40,15 @@
     grid-area: ft;
   }
 
-  /* Main contetnt grid layout */ 
+  /* Main content grid layout */ 
   .main-content main {
     height: 95%;
     width: 95%;
     display: grid;
     justify-content: center;
+    align-items: center;
     grid-template-columns: 1fr;
-    grid-template-rows: 5fr 2fr;
+    grid-template-rows: 4.6fr 2fr;
     gap: 1em;
     grid-template-areas: 
     "art"
@@ -84,35 +86,111 @@
     font-size: 1em;
   }
 
-  .main-content h4 {
+  .main-content article h3 {
     width: 95%;
     display: flex;
     justify-content: center;
-    font-size: 0.8em;
+    font: 0.9em 900;
     padding-bottom: 10px;
-    margin: 0 auto 0 auto;
+    margin: 0 auto 10px auto;
     border-bottom: 1px solid rgba(255,255,255,0.5);
   }
 
   /* layout for the photos in the main article */
   .photos-container {
     display: grid;
-    width: 98%;
+    width: 95%;
     margin: 0 auto 0 auto;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 2.5px;
+    gap: 5px;
     height: 2 fr;
   }
 
   /* photo container styling */
-  .photo {
-    border: 1px solid white;
-    height: 150px;
+  .photo img {
+    max-width: 100%;
+    height: auto;
   }
 
-  #one {
-    background-image: url("assets/HolyRollerCoverSmall.png");
+  /* Main page article intro styling */
+  .band-article {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0 auto 0 auto;
+  }
 
+  .band-article p {
+    color: white;
+    font-size: 10px;
+    text-shadow: none;
+    padding-right: 10px;
+  }
+
+  /* Button styling for form button */
+  .band-article input {
+    background-color: rgba(255, 0, 0, 0.493);
+    box-shadow: 1px 1px 3px rgba(255,255,255,0.5);
+    font-size: 10px;
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+
+  /* Sidebar styling */
+  .main-sidebar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .main-sidebar aside {
+    width: 100%;
+    height: 95%;
+  }
+
+  .main-sidebar h4 {
+    display: flex;
+    width: 95%;
+    justify-content: center;
+    margin: 10px auto 0 auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+  }
+
+  /* Sidebar sub-container lists styling */
+  .blog-links {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .left-list, .right-list {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 100%;
+  }
+
+  .left-list h5, .right-list h5 {
+    display: flex;
+    justify-content: left;
+    margin-left: 30px;
+    font-size: 0.7em
+  }
+
+  .left-list ul, .right-list ul{
+    padding-left: 30px;
+    margin: 0 0 10px 0;
+  }
+
+  .left-list ul a, .right-list ul a {
+    font-size: 9px;
+    color: white;
+    text-shadow: none;
   }
 }

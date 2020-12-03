@@ -21,6 +21,7 @@
     <!-- Header Content -->
     <div class="header">
       <div class="logo">
+        <img src="assets/HMW-Logo.png" alt="Our Logo">
         <header>
           <h1>Heavy Music Weekly</h1>
         </header>
@@ -41,19 +42,58 @@
         <div class="main-article">
           <h2>This Week's Featured Artist</h2>
           <article>
-            <h4>Spiritbox</h4>
+            <h3>Spiritbox</h3>
             <div class="photos-container">
-              <div class="photo" id="one"></div>
-              <div class="photo" id="two"></div>
-              <div class="photo" id="three"></div>
-              <div class="photo" id="four"></div>
+              <div class="photo" id="one">
+                <img src="assets/HolyRollerCoverSmall.png" alt="Holy Roller Album Cover Art">
+              </div>
+              <div class="photo" id="two">
+                <img src="assets/HolyRollerThumbSqSmall.png" alt="Holy Roller Song Thumbnail">
+              </div>
+              <div class="photo" id="three">
+                <img src="assets/SpiritBoxBandPhotoSquareSmall.png" alt="Spiritbox Band Photo">
+              </div>
+              <div class="photo" id="four">
+                <img src="assets/SpiritBoxBand2SquareSmall.png" alt=" Another Spiritbox Band Photo">
+              </div>              
             </div>
-            <div class="band-article"></div>
+            <!-- A small section with a teaser article and a button leading to the main article-->
+            <div class="band-article">
+              <p>Spiritbox is back with their new single, <em>Holy Roller</em>. 
+                 It's their hardest hitting single yet. Check out the band bio and see the full story in the blog post.
+              </p>
+              <form action="blog-page.html">
+                <input type="submit" value="Go To Blog" />
+              </form>
+            </div>
           </article>
         </div>
         <div class="main-sidebar">
           <aside>
-            <h3>Aside Div</h3>
+            <h4>Categories</h4>
+            <div class="blog-links">
+              <div class="left-list">
+                <h5>Band Reviews</h5>
+                <ul>
+                  <!-- TO DO: create additonal blog pages for the following artists-->
+                  <li><a href="#">Slaughter to Prevail</a></li>
+                  <li><a href="#">Thy Art is Murder</a></li>
+                  <li><a href="#">Lorna Shore</a></li>
+                  <li><a href="#">Nightwish</a></li>
+                </ul>
+              </div>
+              <div class="right-list">
+                <h5>Gear Reviews</h5>
+                <ul>
+                  <!-- TO DO: create additional blog pages for gear reviews-->
+                  <li><a href="#">Electric Bass Guide</a></li>
+                  <li><a href="#">6 string vs 7 string </a></li>
+                  <li><a href="#">Best Bass Amps 2020</a></li>
+                  <li><a href="#">Brand Spotlight: Ibanez</a></li>
+                </ul>
+              </div> 
+            </div>
+                       
           </aside>
         </div>        
       </main>

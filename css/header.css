@@ -15,6 +15,11 @@
 /* Styling for small devices 480px and smaller */
 @media screen and (max-width: 480px) {
 
+  /* hiding the logo on small screens */
+  .logo img {
+  display: none;
+  }
+
   /* Header styling and flex container */
   .header {
     display: flex;
@@ -29,6 +34,7 @@
   }
 
   .logo header h1 {
+    margin-bottom: 0;
     height: 100%;
     display: flex;
     justify-content: center;
