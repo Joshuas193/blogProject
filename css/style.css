@@ -1,4 +1,6 @@
 /* Importing the secondary style sheets into the main stylesheet */
+@import "main-page-mobile.css";
+@import "blog-page-mobile.css";
 @import "main-page.css";
 @import "blog-page.css"; 
 @import "header.css";
@@ -37,4 +39,12 @@ a {
 
 a:link, a:visited {
   color: black;
+}
+
+/* Header styling for all screen sizes */
+.main-content, .blog-content {
+  background-image: linear-gradient(to bottom right, rgba(0,0,0,1), rgba(0,0,0,0.7));
+  text-shadow: 3px 1px 12px red, -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  color: black;
+  font-weight: 500;
 }

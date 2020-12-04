@@ -66,11 +66,63 @@
     display: flex;
     justify-content: center;
   }
+
+  /* Styling for HMW's social media links */
+  .hmw-social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .hmw-social-links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 0 15px 0;
+    width: 50%;
+  }
+
+  .hmw-social-links li {
+    display: flex;
+    max-width: 15%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hmw-social-links a {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hmw-social-links img {
+    max-width: 70%;
+    height: auto;
+  }
 }
 
 /* Styling for medium screens from 481px to 799px wide */
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 481px) and (max-width: 800px) {
 
+  /* Header styling and flex container */
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .logo img {
+    max-width: 20%;
+    height: auto;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50%;
+  }
   
 }
 
