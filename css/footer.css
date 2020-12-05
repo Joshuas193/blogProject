@@ -1,16 +1,3 @@
-/* styles for all screen sizes */
-.footer, .footer-mobile {
-  background-image: linear-gradient(to top right, rgba(0,0,0,1), rgba(0,0,0,0.6));
-  color: rgba(255, 255, 255, 0.8);
-  text-shadow: 1px 1px 2px red, -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
-  box-shadow: 0 -6px 8px rgba(0,0,0,0.7);
-}
-
-.footer ul a, .footer-mobile ul a {
-  color: white;
-  text-decoration: underline;
-}
-
 /* styles for small screens *480px and smaller */
 @media screen and (max-width: 480px) {
 
@@ -67,17 +54,55 @@
   }
 }
 
-/* styles for medium screens from 481px to 799px */
-@media screen and (min-width: 481px) {
+/* styles for medium screens from 481px to 800px */
+@media screen and (min-width: 481px) and (max-width: 800px) {
 
   /* removing the mobile style div from larger displays */
    .footer-mobile {
     display: none;
   }
+
+  /* Setting all the containers to flex */
+  .footer {
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 95%;
+    margin: auto;
+    height: 100%;
+  }
+
+  .contact address {
+    padding: 0 10px 0 10px;
+  }
+
+  .copyright p {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 70%;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact, .copyright, #attribute {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 12px;
+    max-width: 33%;
+  }
 }
 
-/* styles for large screens 800px and higher */
-@media screen and (min-width: 800px) {
+/* styles for large screens 801px and higher */
+@media screen and (min-width: 801px) {
 
 
 }

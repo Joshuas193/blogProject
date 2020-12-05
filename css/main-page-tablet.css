@@ -1,5 +1,5 @@
-/* Setting styles for mobile screens */
-@media screen and (max-width: 480px) { 
+/* Styling for medium screens between 481px and 800px wide*/
+@media screen and (min-width: 481px) and (max-width: 800px) {
 
   /* Setting the grid layout */
   .page-content {
@@ -8,7 +8,7 @@
     margin: auto auto;
     justify-content: center;
     grid-template-columns: 1fr;
-    grid-auto-rows: minmax(0.8fr, auto);
+    grid-auto-rows: minmax(1.5fr, auto);
     gap: 0.8em;
     grid-template-areas: 
     "hd"
@@ -40,7 +40,7 @@
     justify-content: center;
     align-items: center;
     grid-template-columns: 1fr;
-    grid-template-rows: 4.6fr 2.2fr;
+    grid-template-rows: 4.6fr 1.5fr;
     gap: 1em;
     grid-template-areas: 
     "art"
@@ -75,17 +75,22 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    font-size: 1.2em;
+    font-size: 1.8em;
   }
 
   .main-content article h3 {
     width: 95%;
     display: flex;
     justify-content: center;
-    font: 1em;
-    padding-bottom: 10px;
+    font: 1.5em;
+    padding-bottom: 20px;
     margin: 0 auto 10px auto;
     border-bottom: 1px solid rgba(255,255,255,0.5);
+  }
+
+  /* Removing the smaller sized photos */
+  #one, #two, #three, #four {
+    display: none;
   }
 
   /* layout for the photos in the main article */
@@ -105,9 +110,18 @@
     height: auto;
   }
 
-  /* removing the larger sized photos from mobile styles */
-  #one-med, #two-med, #three-med, #four-med {
-    display: none;
+  .photo figure {
+    margin: 2px;
+  }
+
+  .photo figcaption {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;;
+    justify-content: center;
+    color: white;
+    text-shadow: none;
+    font-size: 10px;
   }
 
   /* Main page article intro styling */
@@ -121,7 +135,7 @@
 
   .band-article p {
     color: white;
-    font-size: 10px;
+    font-size: 12px;
     text-shadow: none;
     padding-right: 10px;
   }
@@ -130,9 +144,9 @@
   .band-article input {
     background-color: rgba(255, 0, 0, 0.493);
     box-shadow: 1px 1px 3px rgba(255,255,255,0.5);
-    font-size: 10px;
+    font-size: 12px;
     color: rgba(255,255,255,0.8);
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border-radius: 4px;
   }
 
@@ -156,6 +170,7 @@
     margin: 10px auto 0 auto;
     padding-bottom: 10px;
     border-bottom: 1px solid white;
+    font-size: 1.2em;;
   }
 
   /* Sidebar sub-container lists styling */
@@ -182,7 +197,7 @@
     display: flex;
     justify-content: left;
     margin: 16px 0 5px 0;
-    font-size: 0.7em
+    font-size: 1em;
   }
 
   .left-list ul, .right-list ul{
@@ -191,7 +206,7 @@
   }
 
   .left-list ul a, .right-list ul a {
-    font-size: 8.5px;
+    font-size: 12px;
     color: white;
     text-shadow: none;
   }
