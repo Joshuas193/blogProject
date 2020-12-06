@@ -98,7 +98,7 @@
     color: white;
     text-shadow: none;
     font-size: 10px;
-    padding: 10px 5px 0 5px;
+    padding: 10px 10px 0 5px;
     transition: 0.7s;
   }
 
@@ -148,7 +148,7 @@
     color: white;
     font-size: 11px;
     padding-bottom: 10px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
   }
 
   .property {
@@ -168,7 +168,7 @@
     text-shadow: 3px 1px 12px red, -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
     color: white;
     font-size: 10px;
-    margin: 5px 0 10px 0;
+    margin: 0 auto 10px auto;
   }
 
   #bio-1 {
@@ -199,6 +199,10 @@
   }
 
   .blog-sidebar p {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
     color: white;
     font-size: 12px;
     text-shadow: none;
@@ -207,8 +211,10 @@
 
   .blog-sidebar aside {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
   }
 
   .social-links {
@@ -234,5 +240,39 @@
   .social-links img {
     max-width: 50%;
     height: auto;
+  }
+
+  /* Styling for the subscription Form */
+  .form form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form label {
+    color: white;
+    text-shadow: none;
+    padding: 0 10px 0 5px;
+    font-size: 10px;
+  }
+
+  label, input {
+    margin-bottom: 10px;
+  }
+
+  .form input {
+    background-color: rgba(255, 0, 0, 0.493);
+    box-shadow: 1px 1px 3px rgba(255,255,255,0.5);
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 25px;
+    border-radius: 4px;
+  }
+
+  #name, #email {
+    background-color: rgba(255,255,255,0.8);
+    width: 100%;
   }
 }

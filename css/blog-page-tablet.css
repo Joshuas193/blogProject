@@ -82,7 +82,7 @@
     box-shadow: 0 8px 16px 0 rgba(255,255,255,0.2), 0 -8px 16px 0 rgba(255,255,255,0.2);
   }
 
-   /* Setting the styling for the author info div */
+  /* Setting the styling for the author info div */
   .author-info {    
     display: flex;
     width: 100%;
@@ -129,11 +129,11 @@
   /* Styling for the video player */
   .blog-article iframe {
     margin: 0 auto 5px auto;
-    max-width: 95%;
+    max-width: 90%;
     max-height: auto;
   }
 
-  /* removin the smaller and larger players */
+  /* removing the smaller and larger players */
   #i-mobile, #i-pc {
     display: none;
   }
@@ -165,7 +165,7 @@
     text-shadow: 3px 1px 12px red, -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
     color: white;
     font-size: 12px;
-    margin: 5px 0 10px 0;
+    margin: 5px auto 10px auto;
   }
 
   #bio-1 {
@@ -204,8 +204,9 @@
 
   .blog-sidebar aside {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .social-links {
@@ -231,5 +232,39 @@
   .social-links img {
     max-width: 50%;
     height: auto;
+  }
+
+  /* Styling for the subscription Form */
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form label {
+    color: white;
+    text-shadow: none;
+    padding: 0 10px 0 5px;
+  }
+
+  label, input {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .form input {
+    background-color: rgba(255, 0, 0, 0.493);
+    box-shadow: 1px 1px 3px rgba(255,255,255,0.5);
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 25px;
+    border-radius: 4px;
+  }
+
+  #name, #email {
+    background-color: rgba(255,255,255,0.8);
+    width: 97.5%;
   }
 }

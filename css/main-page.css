@@ -35,7 +35,7 @@
   /* Main content grid layout */ 
   .main-content main {
     height: auto;
-    width: 96%;
+    width: 97%;
     margin: 18px auto;
     display: grid;
     justify-content: center;
@@ -151,7 +151,7 @@
 
   /* Main page article intro styling */
   .band-article {
-    width: 95%;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -169,9 +169,9 @@
   .band-article input {
     background-color: rgba(255, 0, 0, 0.493);
     box-shadow: 1px 1px 3px rgba(255,255,255,0.5);
-    font-size: 12px;
+    font-size: 15px;
     color: rgba(255,255,255,0.8);
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     border-radius: 4px;
   }
 
@@ -190,27 +190,75 @@
 
   .main-sidebar h4 {
     display: flex;
-    width: 95%;
+    width: 90%;
     justify-content: center;
     margin: 10px auto 0 auto;
     padding-bottom: 10px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
     font-size: 1.4em;;
   }
   
   /* Sidebar sub-container lists styling */
-  .left-list {
+  .blog-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .left-list, .right-list, .coming-next {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 10px;
     border-bottom: 1px solid rgba(255,255,255,0.5);
   }
 
+  .right-list ul {
+    padding-left: 2vw;;
+  }
+
   .left-list ul a, .right-list ul a {
-    font-size: 12px;
+    font-size: 14px;
     color: white;
     text-shadow: none;
   }
 
-  .left-list h5, .right-list h5 {
+  .left-list h5, .right-list h5, .coming-next h5 {
     font-size: 1.1em;
+    margin: 15px auto 0 auto;
+  }
+
+  .coming-next {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #gojira-another-world img {
+    width: 100%;
+    height: auto;
+  }
+
+  #gojira-another-world figcaption {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;;
+    justify-content: center;
+    color: white;
+    text-shadow: none;
+    font-size: 9px;
+  }
+
+  .coming-next p {
+    display: flex;
+    width: 85%;
+    justify-content: center;
+    font-size: 11px;
+    text-shadow: none;
+    color: white;
   }
 }
