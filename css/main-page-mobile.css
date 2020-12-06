@@ -106,7 +106,7 @@
   }
 
   /* removing the larger sized photos from mobile styles */
-  #one-med, #two-med, #three-med, #four-med {
+  #one-med, #two-med, #three-med, #four-med, #two-large, #three-large, #four-large {
     display: none;
   }
 

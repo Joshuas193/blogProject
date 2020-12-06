@@ -62,7 +62,7 @@ a:link, a:visited {
 }
 
 .nav-links ul a {
-  font-weight: 500;
+  font-weight: 300;
   text-shadow: 3px 1px 8px red, -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
   transition: 0.8s;
 }

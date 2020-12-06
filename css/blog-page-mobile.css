@@ -99,17 +99,14 @@
     text-shadow: none;
     font-size: 10px;
     padding: 10px 5px 0 5px;
+    transition: 0.7s;
   }
 
   .author-info img {
     max-width: 25%;
     height: auto;
     margin: 5px;
-  }
-
-  .hmw-social-links {
-    height: 100%;
-    padding: 0;
+    transition: 0.7s;
   }
 
   /* Styling for the main article */
@@ -136,7 +133,12 @@
   .blog-article iframe {
     margin: 0 auto 5px auto;
     max-width: 95%;
-    height: auto;
+    max-height: auto;
+  }
+
+  /* removing the larger format videos */
+  #i-tablet, #i-pc {
+    display: none;
   }
 
   /* Biography styling */
@@ -179,7 +181,9 @@
   }
 
   #under-video {
-    width: 95%;
+    display: flex;
+    justify-content: center;
+    width: 80%;
     color: white;
     font-size: 10px;
     text-shadow: none;
