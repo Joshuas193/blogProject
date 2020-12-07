@@ -243,23 +243,23 @@
   }
 
   /* Styling for the subscription Form */
-  .form form {
+  .form {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 60%;
     padding: 10px;
     justify-content: center;
-    align-items: center;
+    
   }
 
   .form label {
     color: white;
     text-shadow: none;
-    padding: 0 10px 0 5px;
-    font-size: 10px;
+    padding: 0 10px 0 5px;    
   }
 
   label, input {
+    font-size: 10px;
     margin-bottom: 10px;
   }
 
@@ -267,7 +267,7 @@
     background-color: rgba(255, 0, 0, 0.493);
     box-shadow: 1px 1px 3px rgba(255,255,255,0.5);
     color: rgba(255,255,255,0.8);
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     border-radius: 4px;
   }
 
